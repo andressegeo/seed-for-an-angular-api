@@ -8,8 +8,8 @@
 
 # dependencies
 /node_modules
-/libs
-/venv
+/lib
+/env
 
 # IDEs and editors
 /.idea
