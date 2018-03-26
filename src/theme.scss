@@ -1,0 +1,12 @@
+@import 'palettes';
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$api-app-primary: mat-palette($mat-api-green);
+$api-app-accent:  mat-palette($mat-api-purple);
+$api-app-warn:    mat-palette($mat-red);
+
+$api-app-theme: mat-light-theme($api-app-primary, $api-app-accent, $api-app-warn);
+
+@include angular-material-theme($api-app-theme);

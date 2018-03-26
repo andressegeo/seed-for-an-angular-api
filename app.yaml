@@ -1,0 +1,32 @@
+service: default
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+env_variables:
+  env: 'dev'
+
+handlers:
+- url: /.*
+  script: server.main.server
+  secure: always
+
+skip_files:
+- ^(.*/)?.*\.py[co]$
+- .idea/
+- .git/
+- .angular-cli.json
+- .gitignore
+- requirements.txt
+- karma.conf.js
+- package-lock.json
+- package.json
+- protractor.conf.js
+- README.md
+- tsconfig.json
+- tslint.json
+- bin/
+- src/
+- node_modules/
+- test/
+- e2e/
